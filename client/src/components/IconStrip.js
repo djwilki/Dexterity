@@ -14,7 +14,7 @@ export default function IconStrip({title, imgSrc}) {
                 <Typography>{title}</Typography>
             </Box>
             <Box>
-                <img style={{height: '300px', width: '50vw'}} src={imgSrc}></img>
+                <img style={{height: '300px', width: '50vw', objectFit: 'cover'}} src={imgSrc}></img>
             </Box>
         </Box>
     )
