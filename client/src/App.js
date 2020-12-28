@@ -94,8 +94,8 @@ function App() {
 
       </Box>
       <Box className={classes.inlineCardBox}>
-        <InlineCard></InlineCard>
-        <InlineCard></InlineCard>
+        <InlineCard imgSrc='https://images.unsplash.com/photo-1555656220-46e30749d330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80' title='Dance Therapy' text='Individualized programs for dancers by physical therapists with dance' buttonText='Schedule appointment'></InlineCard>
+        <InlineCard imgSrc='https://images.unsplash.com/photo-1555656220-46e30749d330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80' title='Dance Therapy' text='Individualized programs for dancers by physical therapists with dance' buttonText='Schedule appointment'></InlineCard>
       </Box>
       <IconStrip></IconStrip>
       {/* <nav>

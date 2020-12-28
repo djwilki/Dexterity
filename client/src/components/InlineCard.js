@@ -32,17 +32,17 @@ export default function InlineCard({title, text, buttonText, imgSrc}) {
 
 return (
     <div style={{display:'flex', flexDirection:'row', padding: '0px', width: '50vw', margin: '0px', padding: '0px'}} >
-        <img  style={{maxHeight: '300px', width: '25vw', objectFit: 'cover'}} src='https://images.unsplash.com/photo-1555656220-46e30749d330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80'></img>
+        <img  style={{maxHeight: '300px', width: '25vw', objectFit: 'cover'}} src={imgSrc}></img>
         <Box
         className={classes.cardBox}
         >
             <Typography variant='h4' className={classes.cardText}>
-                {'Dance Therapy'}
+                {title}
             </Typography>
             <Typography variant='div' className={classes.cardText}>
-                {'Individualized programs for dancers by physical therapists with dance '}
+                {text}
             </Typography>
-            <Button className={classes.inlineButton}>Schedule appointment</Button>
+            <Button className={classes.inlineButton}>{buttonText}</Button>
         </Box>
     </div>
 )
