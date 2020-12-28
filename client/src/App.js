@@ -11,6 +11,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import DropDownMenu from './components/DropDownMenu'
+import InlineCard from './components/InlineCard'
+import Box from '@material-ui/core/Box'
+import IconStrip from './components/IconStrip'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -28,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: 'none',
     display: 'flex',
     justifyContent: 'center'
+  },
+  inlineCardBox: {
+    display: 'flex',
+    flexDirection: 'row'
   }
 }));
 
@@ -76,6 +83,21 @@ function App() {
 
 
       </AppBar>
+      <Box
+      display='flex'
+      flexWrap='nowrap'
+      justifyContent='center'
+      >
+        <Typography variant="h3" fontStyle='italic' component="h2" gutterBottom>
+        <i style={{color: 'violet' }}>{'Patient Wellness is our Priority'}</i>
+      </Typography>
+
+      </Box>
+      <Box className={classes.inlineCardBox}>
+        <InlineCard></InlineCard>
+        <InlineCard></InlineCard>
+      </Box>
+      <IconStrip></IconStrip>
       {/* <nav>
             <ul>
                 <li><NavLink to="/" activeclass="active">Home</NavLink></li>
