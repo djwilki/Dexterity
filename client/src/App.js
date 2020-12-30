@@ -14,7 +14,9 @@ import DropDownMenu from './components/DropDownMenu'
 import InlineCard from './components/InlineCard'
 import Box from '@material-ui/core/Box'
 import IconStrip from './components/IconStrip'
-import Carousel from './components/Carousel'
+import MyCarousel from './components/Carousel'
+import Carousel from 'react-material-ui-carousel'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,7 +38,13 @@ const useStyles = makeStyles((theme) => ({
   inlineCardBox: {
     display: 'flex',
     flexDirection: 'row'
-  }
+  },
+  carouselImage: {
+    width:'100vw',
+    objectFit:'cover',
+    maxHeight: '50vh',
+    minHeight: '50px'
+}
 }));
 
 
@@ -67,6 +75,8 @@ function App() {
     setAnchorEl2(null);
   };
   const classes = useStyles();
+
+  const visible = true;
   return (
     <BrowserRouter>
       <AppBar className={classes.navbar} position="sticky">
@@ -99,7 +109,12 @@ function App() {
         <InlineCard imgSrc='https://images.unsplash.com/photo-1555656220-46e30749d330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80' title='Dance Therapy' text='Individualized programs for dancers by physical therapists with dance' buttonText='Schedule appointment'></InlineCard>
       </Box>
       <IconStrip imgSrc='https://images.unsplash.com/photo-1555656220-46e30749d330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80' title='Heart Rate'></IconStrip>
-      <Carousel></Carousel>
+      <MyCarousel></MyCarousel>
+      <Carousel animation='slide' navButtonsAlwaysVisible={visible} >
+        <img className={classes.carouselImage} src='https://cdn.pixabay.com/photo/2018/06/02/18/22/fitness-3448864_960_720.jpg'></img>
+            <img className={classes.carouselImage} src='https://cdn.pixabay.com/photo/2020/05/30/18/05/trauma-5239844_960_720.jpg'></img>
+            <img className={classes.carouselImage} src='https://cdn.pixabay.com/photo/2017/07/25/16/49/manual-release-2538802_960_720.jpg'></img>
+      </Carousel>
       {/* <nav>
             <ul>
                 <li><NavLink to="/" activeclass="active">Home</NavLink></li>
