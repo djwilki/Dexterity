@@ -14,7 +14,6 @@ import DropDownMenu from './components/DropDownMenu'
 import InlineCard from './components/InlineCard'
 import Box from '@material-ui/core/Box'
 import IconStrip from './components/IconStrip'
-import MyCarousel from './components/Carousel'
 import Carousel from 'react-material-ui-carousel'
 
 
