@@ -14,6 +14,7 @@ import DropDownMenu from './components/DropDownMenu'
 import InlineCard from './components/InlineCard'
 import Box from '@material-ui/core/Box'
 import IconStrip from './components/IconStrip'
+import Carousel from './components/Carousel'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   navbar: {
-    backgroundColor: 'inherit',
+    backgroundColor: 'white',
     boxShadow: 'none',
     display: 'flex',
     justifyContent: 'center'
@@ -98,6 +99,7 @@ function App() {
         <InlineCard imgSrc='https://images.unsplash.com/photo-1555656220-46e30749d330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80' title='Dance Therapy' text='Individualized programs for dancers by physical therapists with dance' buttonText='Schedule appointment'></InlineCard>
       </Box>
       <IconStrip imgSrc='https://images.unsplash.com/photo-1555656220-46e30749d330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80' title='Heart Rate'></IconStrip>
+      <Carousel></Carousel>
       {/* <nav>
             <ul>
                 <li><NavLink to="/" activeclass="active">Home</NavLink></li>
