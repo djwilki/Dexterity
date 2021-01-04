@@ -1,6 +1,8 @@
 import { Box, Typography } from '@material-ui/core';
 import React from 'react';
 import { useState } from 'react';
+import Maps from './Maps';
+
 
 export default function Contact(){
 
@@ -11,7 +13,7 @@ export default function Contact(){
 
 
 return(
-<Box>
+<Box style={{display: 'flex', flexDirection: 'row'}}>
 <Box>
     <Typography>contact us</Typography>
     <Typography>-</Typography>
@@ -29,6 +31,11 @@ return(
     <Typography>-</Typography>
     <Typography>Monday - Friday</Typography>
     <Typography>10:00 AM - 10:05 PM</Typography>
+    <Maps/>
+    <Typography>Phone # 888-888-8888</Typography>
+    <Typography>Fax # 888-888-8888</Typography>
+    <Typography>1 Sunnnyvale Dr</Typography>
+    <Typography>Sunnyvale, CA 94087</Typography>
 </Box>
 <Box></Box>
 </Box>
