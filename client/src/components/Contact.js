@@ -14,10 +14,10 @@ export default function Contact(){
 
 return(
 <Box style={{display: 'flex', flexDirection: 'row'}}>
-<Box>
+
+    <Box style={{ width: '50%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
     <Typography>contact us</Typography>
     <Typography>-</Typography>
-    <Box style={{display: 'flex', flexDirection: 'column'}}>
         <Box style={{display: 'flex', flexDirection: 'row'}}>
     <input type='email' placeholder='Email'/>
         <input type='text' placeholder='Name'/>
@@ -25,8 +25,8 @@ return(
         <input type='text' placeholder='Title'/>
         <input type='textarea' placeholder='Message'/>
     </Box>
-</Box>
-<Box>
+
+<Box style={{width: '50%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 <Typography>visit us</Typography>
     <Typography>-</Typography>
     <Typography>Monday - Friday</Typography>
