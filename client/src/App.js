@@ -17,6 +17,7 @@ import IconStrip from './components/IconStrip'
 import Carousel from 'react-material-ui-carousel'
 import ParallaxStrip from './components/ParallaxStrip';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 
@@ -122,6 +123,7 @@ function App() {
         <img className={classes.carouselImage} src='https://cdn.pixabay.com/photo/2017/07/25/16/49/manual-release-2538802_960_720.jpg'></img>
       </Carousel>
       <Contact></Contact>
+      <Footer/>
       {/* <nav>
             <ul>
                 <li><NavLink to="/" activeclass="active">Home</NavLink></li>
