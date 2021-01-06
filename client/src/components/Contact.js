@@ -34,8 +34,8 @@ return(
     <Maps/>
     <Typography>Phone # 888-888-8888</Typography>
     <Typography>Fax # 888-888-8888</Typography>
-    <Typography>1 Sunnnyvale Dr</Typography>
-    <Typography>Sunnyvale, CA 94087</Typography>
+    <Typography>1 California Dr</Typography>
+    <Typography>California, CA 94087</Typography>
 </Box>
 <Box></Box>
 </Box>
