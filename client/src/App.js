@@ -56,15 +56,15 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   useEffect(() => {
     const getCSRF = async () => {
-        const res = await fetch('/api/session/csrf');
+      const res = await fetch('/api/session/csrf');
 
-        if (res.ok) {
-            return;
-        }
+      if (res.ok) {
+        return;
+      }
     }
 
     getCSRF();
-}, []);
+  }, []);
   console.log("____Rendering app_____")
 
 
@@ -134,7 +134,7 @@ function App() {
         <img className={classes.carouselImage} src='https://cdn.pixabay.com/photo/2017/07/25/16/49/manual-release-2538802_960_720.jpg'></img>
       </Carousel>
       <Contact></Contact>
-      <Footer/>
+      <Footer />
       {/* <nav>
             <ul>
                 <li><NavLink to="/" activeclass="active">Home</NavLink></li>
