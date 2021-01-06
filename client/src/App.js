@@ -54,6 +54,17 @@ const useStyles = makeStyles((theme) => ({
 
 
 function App() {
+  useEffect(() => {
+    const getCSRF = async () => {
+        const res = await fetch('/api/session/csrf');
+
+        if (res.ok) {
+            return;
+        }
+    }
+
+    getCSRF();
+}, []);
   console.log("____Rendering app_____")
 
 

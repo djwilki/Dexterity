@@ -1,6 +1,7 @@
 
 import { createStore, compose, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk'
+import ui from './ui'
 
 
 let storeEnhancer;
@@ -10,7 +11,7 @@ const entities = combineReducers({
 });
 
 const rootReducer = combineReducers({
-
+    ui
 });
 
 if (process.env.NODE_ENV !== 'production') {
