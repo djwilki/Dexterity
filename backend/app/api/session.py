@@ -4,7 +4,7 @@ from flask_login import login_user, current_user, logout_user
 from app.auth import login_manager
 from werkzeug.datastructures import MultiDict
 from flask_wtf.csrf import generate_csrf
-from flask_mail import message
+from flask_mail import Message
 
 
 session = Blueprint("session", __name__)
@@ -22,7 +22,10 @@ def email()
     data = MultiDict(mapping=request.json)
     form = LoginForm(data)
     if form.validate():
-
+        msg = Message(data['title'], sender=(data['name'], data['userEmail'])
+        )
+        msg.body = data['message']
+        mail.send(msg)
 
 @login_manager.user_loader
 def load_user(user_id):
