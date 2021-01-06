@@ -1,4 +1,4 @@
-export default function uiReducer(state = initialSessionState, action) {
+export default function uiReducer(state = {}, action) {
     const newState = Object.assign({}, state);
     switch (action.type) {
 

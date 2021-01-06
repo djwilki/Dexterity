@@ -27,7 +27,7 @@ export default function DropDownMenu({links, title, }) {
 
 
 return (
-    <div>
+    <div onMouseLeave={handleClose}>
         <Button aria-controls="simple-menu" aria-haspopup="true" onMouseOver={handleClick}>
         {title}
       </Button>
@@ -39,10 +39,16 @@ return (
         onClose={handleClose}
         PaperProps={{
             style: {
-              transform: 'translateX(0%) translateY(10px)',
-            }
+
+            },
           }}
-        MenuListProps={{ onMouseLeave: handleClose }}
+        MenuListProps={{ onMouseLeave: handleClose,
+        children: items
+        }}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
       >
         {title.length > 0 ? <>{items}</>: <></>}
       </Menu>
