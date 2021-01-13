@@ -34,7 +34,7 @@ const CheckoutForm = () => {
     };
 
     return (
-      <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column'}}>
+      <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', backgroundColor: 'grey'}}>
         <CardElement />
         <button type="submit" disabled={!stripe}>
           Pay
