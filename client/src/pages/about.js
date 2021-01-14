@@ -7,8 +7,7 @@ export default function About(){
 return(
 <>
     <IconStrip></IconStrip>
-    <InlineCard>
-    </InlineCard>
+    <InlineCard title="Our Physical Therapists" text="Our physical therapists are finely picked from selected backgrounds, with specialties designed for individual patient needs" buttonText="staff" imgSrc="https://media.istockphoto.com/photos/portrait-of-three-young-female-health-trainers-picture-id1152234413?s=2048x2048"></InlineCard>
 </>
 )
 
