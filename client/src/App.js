@@ -138,7 +138,7 @@ function App() {
           <Billing></Billing>
         </Route>
         <Route path="/about">
-
+          <About></About>
         </Route>
       </Switch>
       <Contact></Contact>
