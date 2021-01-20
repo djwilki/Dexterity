@@ -49,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: '50vh',
     minHeight: '50px'
   },
+  carouselIndicator:{
+    marginTop: '-50px'
+  }
 }));
 
 
