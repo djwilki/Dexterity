@@ -2,6 +2,7 @@ import React from 'react';
 import {Elements} from '@stripe/react-stripe-js'
 import {loadStripe} from '@stripe/stripe-js';
 import CheckoutForm from '../components/CheckoutForm';
+import { Box } from '@material-ui/core';
 
 
 export default function Billing(){
@@ -11,9 +12,11 @@ export default function Billing(){
 
 
 return(
-<Elements stripe={stripePromise}>
+    <Box style={{height: '300px'}}>
+<Elements stripe={stripePromise} >
     <CheckoutForm/>
     </Elements>
+    </Box>
 )
 
 }

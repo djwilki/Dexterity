@@ -138,7 +138,7 @@ function App() {
             <img className={classes.carouselImage} src='https://cdn.pixabay.com/photo/2020/05/30/18/05/trauma-5239844_960_720.jpg'></img>
             <img className={classes.carouselImage} src='https://cdn.pixabay.com/photo/2017/07/25/16/49/manual-release-2538802_960_720.jpg'></img>
           </Carousel>
-          <Billing></Billing>
+          <Billing style={{height: '300px'}}></Billing>
         </Route>
         <Route path="/about">
           <About></About>
