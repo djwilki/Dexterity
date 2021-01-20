@@ -14,7 +14,7 @@ export default function Billing(){
 return(
     <Box style={{height: '300px'}}>
 <Elements stripe={stripePromise} >
-    <CheckoutForm/>
+    <CheckoutForm style={{display: 'flex', alignItems: 'space-between'}}/>
     </Elements>
     </Box>
 )
