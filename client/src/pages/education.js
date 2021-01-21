@@ -2,6 +2,7 @@ import React from 'react';
 import {loadStripe} from '@stripe/stripe-js';
 import { Box } from '@material-ui/core';
 import InlineCard from '../components/InlineCard'
+import TextStrip from '../components/TextStrip';
 
 
 export default function Education(){
@@ -11,8 +12,9 @@ export default function Education(){
 
 
 return(
-    <Box style={{height: '300px'}}>
+    <Box>
         <InlineCard></InlineCard>
+        <TextStrip></TextStrip>
     </Box>
 )
 

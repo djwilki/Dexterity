@@ -20,6 +20,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Billing from './pages/billing'
 import About from './pages/about'
+import Education from './pages/education';
 
 
 
@@ -142,6 +143,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About></About>
+        </Route>
+        <Route path="/education">
+          <Education></Education>
         </Route>
       </Switch>
       <Contact></Contact>
