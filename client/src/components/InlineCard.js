@@ -20,10 +20,10 @@ export default function InlineCard({title, text, buttonText, imgSrc}) {
             display:'flex',
             justifyContent:'center',
             alignItems:'center',
-            width: '25vw',
             flexDirection: 'column',
             boxSizing: 'border-box',
-            padding:'15px'
+            padding:'15px',
+            width: '25vw',
         }
       }));
 
@@ -33,9 +33,7 @@ export default function InlineCard({title, text, buttonText, imgSrc}) {
 return (
     <div style={{display:'flex', flexDirection:'row', padding: '0px', width: '50vw', margin: '0px', padding: '0px'}} >
         <img  style={{maxHeight: '300px', width: '25vw', objectFit: 'cover'}} src={imgSrc}></img>
-        <Box
-        className={classes.cardBox}
-        >
+        <Box className={classes.cardBox}>
             <Typography variant='h4' className={classes.cardText}>
                 {title}
             </Typography>

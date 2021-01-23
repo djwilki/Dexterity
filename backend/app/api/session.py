@@ -18,7 +18,7 @@ def csrf():
     return res
 
 @session.route("/email", methods=["POST"])
-def email()
+def email():
     data = MultiDict(mapping=request.json)
     form = LoginForm(data)
     if form.validate():
