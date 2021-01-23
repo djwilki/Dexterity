@@ -8,6 +8,7 @@ return(
 <>
     <InstagramEmbed url='https://instagr.am/p/Zw9o4/'></InstagramEmbed>
     <InstagramEmbed url='https://instagr.am/p/Zw9o4/'></InstagramEmbed>
+    <InstagramEmbed url='https://instagr.am/p/Zw9o4/'></InstagramEmbed>
 </>
 )
 
