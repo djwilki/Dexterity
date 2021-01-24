@@ -1,11 +1,11 @@
 import { Box } from '@material-ui/core';
 import React from 'react';
 
-export default function Component(name, position, image) {
+export default function Component(name, position, path) {
 
     return (
         <Box>
-            <img src={image} style={{ borderRadius: '50%' }} />
+            <img src={path} style={{ borderRadius: '50%' }} />
             <h3>{name},{position}</h3>
         </Box>
     )
