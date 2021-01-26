@@ -1,7 +1,7 @@
 import { Box } from '@material-ui/core';
 import React from 'react';
 
-export default function Component(name, position, path) {
+export default function StaffCard(name, position, path) {
 
     return (
         <Box>
