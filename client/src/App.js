@@ -21,6 +21,7 @@ import Footer from './components/Footer';
 import Billing from './pages/billing'
 import About from './pages/about'
 import Education from './pages/education';
+import Staff from './pages/staff'
 
 
 
@@ -144,6 +145,9 @@ function App() {
         {/* <Route path="/about">
           <About></About>
         </Route> */}
+        <Route>
+          <Staff></Staff>
+        </Route>
         <Route path="/education">
           <Education></Education>
         </Route>
