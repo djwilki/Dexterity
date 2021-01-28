@@ -142,9 +142,9 @@ function App() {
           </Carousel>
           <Billing style={{height: '300px'}}></Billing>
         </Route>
-        {/* <Route path="/about">
+        <Route path="/about">
           <About></About>
-        </Route> */}
+        </Route>
         <Route>
           <Staff></Staff>
         </Route>
