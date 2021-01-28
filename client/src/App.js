@@ -151,6 +151,9 @@ function App() {
         <Route path="/education">
           <Education></Education>
         </Route>
+        <Route path="newsletter">
+
+        </Route>
       </Switch>
       <Contact></Contact>
       <Footer />
