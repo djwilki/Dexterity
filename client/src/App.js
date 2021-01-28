@@ -109,6 +109,7 @@ function App() {
           <DropDownMenu title="SERVICES" links={[['/physicaltherapy', 'PHYSICAL THERAPY'], ['/telehealth', 'TELEHEALTH']]} ></DropDownMenu>
           <Button component={RouterLink} to='/education'>EDUCATION</Button>
           <Button component={RouterLink} to='/info'>INFO</Button>
+          <Button component={RouterLink} to='/newsletter'>NEWSLETTER</Button>
           <Button component={RouterLink} to='/contact'>CONTACT</Button>
         </Toolbar>
       </AppBar>
