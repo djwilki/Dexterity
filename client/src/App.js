@@ -152,7 +152,7 @@ function App() {
           <Education></Education>
         </Route>
         <Route path="newsletter">
-
+          <Newsletter></Newsletter>
         </Route>
       </Switch>
       <Contact></Contact>
