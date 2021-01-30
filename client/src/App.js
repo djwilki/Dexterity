@@ -22,6 +22,7 @@ import Billing from './pages/billing'
 import About from './pages/about'
 import Education from './pages/education';
 import Staff from './pages/staff'
+import Newsletter from './pages/newsletter'
 
 
 
