@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import Maps from './Maps';
 import { Input } from '@material-ui/core'
+import {Button } from '@material-ui/core'
 
 export default function Contact() {
 
@@ -22,6 +23,11 @@ export default function Contact() {
     const classes = useStyles();
 
 
+    const sendEmail = () => {
+
+    }
+
+
     return (
         <Box style={{ display: 'flex', flexDirection: 'row' }}>
 
@@ -37,6 +43,7 @@ export default function Contact() {
                 <Input type='text' placeholder='Title' fullWidth='true' classes={classes.fullWidth}/>
                 <Input type='textarea' placeholder='Message' fullWidth='true' multiline='true' rows={16} classes={classes.fullWidth}/>
                 </Box>
+                <Button>Send</Button>
             </Box>
 
             <Box style={{ width: '50%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
