@@ -154,10 +154,10 @@ function App() {
         <Route exact path="/education">
           <Education></Education>
         </Route>
-        <Route exact path="newsletter">
+        <Route exact path="/newsletter">
           <Newsletter></Newsletter>
         </Route>
-        <Route exact path="billing">
+        <Route exact path="/billing">
           <Billing></Billing>
         </Route>
       </Switch>
