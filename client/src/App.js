@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: '50vh',
     minHeight: '50px'
   },
-  carouselIndicator:{
+  carouselIndicator: {
     marginTop: '-50px'
   }
 }));
@@ -143,21 +143,21 @@ function App() {
             <img className={classes.carouselImage} src='https://cdn.pixabay.com/photo/2020/05/30/18/05/trauma-5239844_960_720.jpg'></img>
             <img className={classes.carouselImage} src='https://cdn.pixabay.com/photo/2017/07/25/16/49/manual-release-2538802_960_720.jpg'></img>
           </Carousel>
-          <Billing style={{height: '300px'}}></Billing>
+          <Billing style={{ height: '300px' }}></Billing>
         </Route>
-        <Route path="/about">
+        <Route exact path="/about">
           <About></About>
         </Route>
-        <Route>
+        <Route exact path="/staff">
           <Staff></Staff>
         </Route>
-        <Route path="/education">
+        <Route exact path="/education">
           <Education></Education>
         </Route>
-        <Route path="newsletter">
+        <Route exact path="newsletter">
           <Newsletter></Newsletter>
         </Route>
-        <Route path="billing">
+        <Route exact path="billing">
           <Billing></Billing>
         </Route>
       </Switch>
