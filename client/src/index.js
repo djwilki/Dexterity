@@ -7,6 +7,10 @@ import configureStore from './store/configureStore'
 
 export const store = configureStore();
 
+const dotenv = require('dotenv');
+dotenv.config();
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

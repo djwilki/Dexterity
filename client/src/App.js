@@ -18,11 +18,12 @@ import Carousel from 'react-material-ui-carousel'
 import ParallaxStrip from './components/ParallaxStrip';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Billing from './pages/billing'
-import About from './pages/about'
+import Billing from './pages/billing';
+import About from './pages/about';
 import Education from './pages/education';
-import Staff from './pages/staff'
-import Newsletter from './pages/newsletter'
+import Staff from './pages/staff';
+import Newsletter from './pages/newsletter';
+import InstagramEmbed from 'react-instagram-embed';
 
 
 
