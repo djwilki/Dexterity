@@ -43,7 +43,7 @@ export default function Contact() {
                 <Input type='text' placeholder='Title' fullWidth='true' classes={classes.fullWidth}/>
                 <Input type='textarea' placeholder='Message' fullWidth='true' multiline='true' rows={16} classes={classes.fullWidth}/>
                 </Box>
-                <Button>Send</Button>
+                <Button onClick={sendEmail}>Send</Button>
             </Box>
 
             <Box style={{ width: '50%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
