@@ -13,7 +13,7 @@ export default function Education(){
 
 return(
     <Box>
-        <InlineCard title='Education'></InlineCard>
+        <InlineCard title='Education' buttonText='test'></InlineCard>
         <TextStrip></TextStrip>
     </Box>
 )
