@@ -5,7 +5,7 @@ import Maps from './Maps';
 import { Input } from '@material-ui/core'
 import {Button } from '@material-ui/core'
 
-export default function Contact() {
+export default function Contact({props}) {
 
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
@@ -51,7 +51,7 @@ export default function Contact() {
                 <Typography>-</Typography>
                 <Typography>Monday - Friday</Typography>
                 <Typography>10:00 AM - 10:05 PM</Typography>
-                <Maps />
+                <Maps Key={props.Key} />
                 <Typography>Phone # 888-888-8888</Typography>
                 <Typography>Fax # 888-888-8888</Typography>
                 <Typography>1 California Dr</Typography>
