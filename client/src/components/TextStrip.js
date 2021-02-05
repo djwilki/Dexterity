@@ -3,7 +3,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 
-export default function TextStrip({text}){
+export default function TextStrip({text, title}){
 
     const useStyles = makeStyles((theme) => ({
         TextStrip: {
@@ -17,7 +17,8 @@ export default function TextStrip({text}){
       const classes = useStyles();
 
 return(
-<Box className={classes.TextStrip}>
+<Box className={classes.TextStrip}>\
+  {title}
   {text}
 </Box>
 )
