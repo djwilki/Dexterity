@@ -24,6 +24,7 @@ import Education from './pages/education';
 import Staff from './pages/staff';
 import Newsletter from './pages/newsletter';
 import InstagramEmbed from 'react-instagram-embed';
+const Key = process.env.MAPS_API_KEY;
 
 
 

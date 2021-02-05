@@ -11,10 +11,10 @@ const center = {
   lng: -38.523
 };
 
-function Maps() {
+function Maps(props) {
   return (
     <LoadScript
-      googleMapsApiKey=""
+      googleMapsApiKey={props.Key}
     >
       <GoogleMap
         mapContainerStyle={containerStyle}
